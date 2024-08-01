@@ -49,3 +49,13 @@ Now,
 ```bash
 open up you local host and port
 ```
+
+### dagshub
+
+import dagshub
+dagshub.init(repo_owner='xyz', repo_name='kidney-disease', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
